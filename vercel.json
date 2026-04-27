@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "buildCommand": "node scripts/verify-static.js",
+  "outputDirectory": "public",
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "rewrites": [
+    { "source": "/", "destination": "/index.html" },
+    { "source": "/grade-1", "destination": "/grade-1.html" },
+    { "source": "/grade-2", "destination": "/grade-2.html" },
+    { "source": "/grade-3", "destination": "/grade-3.html" },
+    { "source": "/grade-4", "destination": "/grade-4.html" },
+    { "source": "/grade-5", "destination": "/grade-5.html" },
+    { "source": "/grade-6", "destination": "/grade-6.html" },
+    { "source": "/programming", "destination": "/programming.html" },
+    { "source": "/about", "destination": "/about.html" }
+  ]
+}

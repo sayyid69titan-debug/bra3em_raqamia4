@@ -1,0 +1,13 @@
+{
+  "name": "baraem-rakamiya-vercel-ready",
+  "version": "3.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "node server.js",
+    "start": "node server.js",
+    "build": "node scripts/verify-static.js"
+  },
+  "engines": {
+    "node": "20.x"
+  }
+}
