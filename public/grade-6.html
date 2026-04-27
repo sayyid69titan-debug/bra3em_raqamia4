@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>براعم رقمية</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="grade-page" data-grade="6">
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="index.html">
+        <div><img src="/assets/logo2.png" alt="شعار الموقع" width="50" height="50"></div>
+        <div>
+          <h1 id="gradeTitle"></h1>
+          <p>رحلة صفية مطورة داخل براعم رقمية</p>
+        </div>
+      </a>
+      <nav class="nav">
+        <a href="about.html">من نحن</a>
+        <a href="index.html">الرئيسية</a>
+        <a href="#quickJourney">الرحلة</a>
+        <a href="#units">صور الوحدات</a>
+        <a href="#games">الألعاب</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero hero-grade">
+      <div class="container hero-shell grade-shell glass">
+        <div class="hero-main-panel">
+          <div class="hero-badge-row">
+            <span class="pill" id="gradeBadge"></span>
+            <span class="pill soft" id="gradeStage"></span>
+          </div>
+          <h2 id="gradeHeroTitle"></h2>
+          <p class="hero-lead" id="gradeLead"></p>
+          <div class="hero-actions">
+            <a class="btn primary large" href="#games">ابدأ بالنشاط التفاعلي</a>
+            <a class="btn secondary large" href="#units">استعرض الوحدات</a>
+          </div>
+          <div class="hero-mini-stats" id="gradeStats"></div>
+        </div>
+        <div class="hero-visual-panel grade-visual">
+          <div class="hero-mascot grade-hero-image-wrap">
+            <img id="heroImg" class="hero-img" alt="صورة الصف">
+          </div>
+        </div>
+        <aside class="hero-sidebar grade-sidebar">
+          <div class="sidebar-card">
+            <span class="sidebar-icon">🎯</span>
+            <strong>هدف الصف</strong>
+            <small id="goalCardText"></small>
+          </div>
+          <div class="sidebar-card">
+            <span class="sidebar-icon">🧩</span>
+            <strong>مسار التنفيذ</strong>
+            <small>تعلم ← تطبيق ← إنجاز</small>
+          </div>
+          <div class="sidebar-card">
+            <span class="sidebar-icon">🏆</span>
+            <strong>الناتج النهائي</strong>
+            <small id="resultCardText"></small>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section" id="quickJourney">
+      <div class="container">
+        <div class="section-head centered">
+          <span>ماذا سيحدث في هذا الصف؟</span>
+        
+        </div>
+        <div class="cards-3 journey-cards" id="journeyCards"></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head centered">
+          <span>رحلة التعلم</span>
+          <h3>كيف يتحرك الطفل داخل الصفحة؟</h3>
+        </div>
+        <div class="flow-grid grade-flow" id="gradeFlowSteps"></div>
+      </div>
+    </section>
+
+    <section class="section" id="units">
+      <div class="container split grade-content-split">
+        <article class="glass card">
+          <div class="section-head"><span>صور الوحدات</span></div>
+          <div id="unitsSummary" class="unit-summary-grid"></div>
+          <div id="unitsAccordion" class="accordion"></div>
+        </article>
+        <article class="glass card">
+          <div class="section-head"><span>الأنشطة التعليمية</span><h3>أنشطة الصف بصياغة أقصر وأوضح</h3></div>
+          <ol id="activitiesList" class="activity-list compact"></ol>
+          <div class="grade-support-panels">
+            <div class="support-box">
+              <h4>للمعلم</h4>
+              <p id="teacherNote"></p>
+            </div>
+            <div class="support-box">
+              <h4>لولي الأمر</h4>
+              <p id="parentNote"></p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head centered"><span>بطاقات بصرية</span></div>
+        <div id="galleryGrid" class="gallery-grid"></div>
+      </div>
+    </section>
+
+    <section class="section" id="games">
+      <div class="container">
+        <div class="section-head centered"><span>الألعاب التفاعلية</span><h3>تجارب مرتبطة بالمفاهيم والأنشطة</h3></div>
+        <div id="gamesGrid" class="games-grid"></div>
+      </div>
+    </section>
+
+    <section class="section section-cta">
+      <div class="container">
+        <div class="glass cta-banner">
+          <div>
+            <span class="pill">الخطوة التالية</span>
+            <h3>أكمل رحلة هذا الصف ثم انتقل للصف التالي</h3>
+            <p id="nextStepText"></p>
+          </div>
+          <div class="hero-actions" id="gradeFooterActions"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="viewer-modal" id="viewerModal"></div>
+
+  <footer class="footer">
+    <div class="container"><a class="btn secondary" href="index.html">العودة إلى الرئيسية</a></div>
+  </footer>
+
+  <script src="js/content.js"></script>
+  <script src="js/progress-store.js"></script>
+  <script src="js/engines.js"></script>
+  <script src="js/grade.js"></script>
+  <script src="js/viewer.js"></script>
+</body>
+</html>

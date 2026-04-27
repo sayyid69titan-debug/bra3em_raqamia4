@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>براعم رقمية</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="home-page">
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="index.html">
+        <div > <img src="/assets/logo2.png" alt="شعار الموقع" width="50" height="50"> </div>
+        <div>
+          <h1>براعم رقمية</h1>
+          <p>منصة عربية تفاعلية تحول المنهج إلى تعلم ممتع قابل للقياس</p>
+        </div>
+      </a>
+      <nav class="nav">
+        <a href="about.html">من نحن</a>
+        <a href="#gradeTracks">الصفوف</a>
+        <a href="#value">القيمة</a>
+        <a href="#flow">كيف تعمل</a>
+        <a href="#dashboards">لوحات المتابعة</a>
+        <button class="btn pdf-nav-btn" id="pdfLibraryToggle" type="button">📚 المكتبة</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero hero-home">
+      <div class="container hero-shell glass">
+        <div class="hero-main-panel">
+          <div class="solution-gif-card" aria-label="الحل لمشاكلك هنا">
+            <img src="assets/robot-solution.gif" alt="رجل آلي يشير إلى رأسه">
+            <div class="solution-speech">الحل لمشاكلك هنا</div>
+          </div>
+          <div class="hero-badge-row">
+            <span class="pill">واجهة مطورة</span>
+            <span class="pill soft">جاهزة للعرض أمام اللجنة</span>
+          </div>
+          <h2>حوّل دراستك إلى <span>مغامرة رقمية!</span></h2>
+          <p class="hero-lead">براعم رقمية منصة عربية تفاعلية تحول أنشطة المنهج إلى تجارب تعلم ممتعة للأطفال من الصف الأول إلى السادس، وتمنح المعلم أنشطة جاهزة، وتوفر لولي الأمر صورة أوضح عن تقدم الطفل.</p>
+          <p class="hero-sublead">بدل عرض المحتوى كنصوص طويلة، صارت الرحلة أوضح: يختار الطفل الصف، يفهم المفهوم بصريًا، يطبق عبر نشاط أو لعبة، ثم يرى نتيجة وتقدمًا قابلًا للمتابعة.</p>
+          <div class="hero-actions">
+            <a class="btn primary large" href="grade-3.html">جرّب رحلة الصف الثالث</a>
+            <a class="btn secondary large" href="#gradeTracks">استعرض جميع الصفوف</a>
+          </div>
+        </div>
+
+        <div class="hero-visual-panel">
+          <div class="hero-stat stat-books">
+            <div class="hero-stat-icon">📚</div>
+            <div><strong>6</strong><span>صفوف دراسية</span></div>
+          </div>
+          <div class="hero-stat stat-games">
+            <div class="hero-stat-icon">🎮</div>
+            <div><strong>29</strong><span>تجربة تعليمية</span></div>
+          </div>
+          <div class="hero-progress-card">
+            <div class="hero-progress-head">
+              <span>تقدمك</span>
+              <strong data-progress-percent>0%</strong>
+            </div>
+            <div class="progress-bar"><span data-progress-bar style="width:0%"></span></div>
+            <small data-progress-text>جاري تحميل التقدم الفعلي من قاعدة البيانات...</small>
+          </div>
+          <div class="hero-mascot">
+            <img src="assets/Gemini_Generated_Image_5pa5hy5pa5hy5pa5.png" alt="براعم رقمية">
+          </div>
+        </div>
+
+        <aside class="hero-sidebar">
+          <a href="#dashboards" class="sidebar-card">
+            <span class="sidebar-icon">🧭</span>
+            <strong>رحلتي</strong>
+            <small>المسار التعليمي خطوة بخطوة</small>
+          </a>
+          <a href="#dashboards" class="sidebar-card">
+            <span class="sidebar-icon">🏅</span>
+            <strong>أوسمتي</strong>
+            <small>تحفيز ونقاط وإنجازات</small>
+          </a>
+          <button class="sidebar-card sidebar-button" id="pdfLibraryToggleSide" type="button">
+            <span class="sidebar-icon">📘</span>
+            <strong>المكتبة</strong>
+            <small>ملفات PDF والمواد الداعمة</small>
+          </button>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section section-tight" id="problem">
+      <div class="container">
+        <div class="section-head centered">
+          <span>المشكلة التي نحلها</span>
+          <h3>التعلم النظري وحده لا يكفي لبناء فهم رقمي ممتع وواضح</h3>
+          <p>كثير من الأطفال يتلقون المفاهيم الرقمية بصورة نظرية أو مجزأة، بينما يحتاج المعلم وولي الأمر إلى أدوات عربية تفاعلية تربط المفهوم بالتطبيق وتعرض رحلة التعلم بصورة أبسط وأكثر إقناعًا.</p>
+        </div>
+        
+      </div>
+    </section>
+
+    <section class="section" id="value">
+      <div class="container">
+        <div class="section-head centered">
+          <span>ما الذي يقدمه المشروع؟</span>
+          <h3>قيمة واضحة لكل طرف في التجربة التعليمية</h3>
+        </div>
+        <div class="cards-3 info-grid" id="valueCards"></div>
+      </div>
+    </section>
+
+    <section class="section" id="flow">
+      <div class="container">
+        <div class="section-head centered">
+          <span>كيف تعمل المنصة؟</span>
+          <h3>رحلة بسيطة في أربع خطوات مرئية</h3>
+        </div>
+        <div class="flow-grid" id="flowSteps"></div>
+      </div>
+    </section>
+
+    <section class="section" id="gradeTracks">
+      <div class="container">
+        <div class="section-head centered">
+          <span>المسار الصفي</span>
+          <h3>واجهة صفوف مطورة على شكل بطاقات مختصرة وواضحة</h3>
+          <p>تم تحديث عرض الصفوف ليشبه المخطط البصري: تقسيم مرحلي، بطاقات تعلم/تطبيق/إنجاز، وانتقال أسرع إلى الصف المناسب.</p>
+        </div>
+        <div id="gradeTracksGrid" class="grade-tracks-grid"></div>
+      </div>
+    </section>
+
+    <section class="section" id="difference">
+      <div class="container">
+        <div class="section-head centered">
+          <span>لماذا براعم رقمية مختلفة؟</span>
+          <h3>ثلاث مزايا تجعل المنصة أقرب إلى منتج تعليمي حقيقي</h3>
+        </div>
+        <div class="cards-3 info-grid" id="differenceCards"></div>
+      </div>
+    </section>
+
+    <section class="section" id="dashboards">
+      <div class="container">
+        <div class="section-head centered">
+          <span>لوحات المتابعة</span>
+          <h3>نماذج تعرض التقدم بطريقة تقنع اللجنة بإمكانية التوسع</h3>
+        </div>
+        <div class="dashboard-grid">
+          <article class="glass card dashboard-card student">
+            <div class="dashboard-head"><span>لوحة تقدم الطالب</span><strong>رحلتي</strong></div>
+            <ul class="dashboard-list" id="studentDashboardList"></ul>
+          </article>
+          <article class="glass card dashboard-card teacher">
+            <div class="dashboard-head"><span>لوحة المعلم</span><strong>متابعة الصف</strong></div>
+            <ul class="dashboard-list" id="teacherDashboardList"></ul>
+          </article>
+          <article class="glass card dashboard-card parent">
+            <div class="dashboard-head"><span>ملخص ولي الأمر</span><strong>أثر أسبوعي</strong></div>
+            <ul class="dashboard-list" id="parentDashboardList"></ul>
+          </article>
+        </div>
+        <div class="dashboard-actions"><button class="btn secondary" id="resetProgressBtn" type="button">إعادة تعيين التقدم</button></div>
+      </div>
+    </section>
+
+    <section class="section" id="impact">
+      <div class="container split impact-split">
+        <article class="glass card">
+          <div class="section-head"><span>الأثر المتوقع</span><h3>كيف سنقيس النجاح باحتراف؟</h3></div>
+          <div class="impact-metrics">
+            <div class="impact-item"><strong>01</strong><p>نسبة إكمال الأنشطة داخل كل صف.</p></div>
+            <div class="impact-item"><strong>02</strong><p>تحسن انتقال الطفل من المفهوم إلى التطبيق.</p></div>
+            <div class="impact-item"><strong>03</strong><p>عدد الأنشطة التي ينفذها المعلم فعليًا داخل الصف.</p></div>
+            <div class="impact-item"><strong>04</strong><p>مستوى تفاعل ولي الأمر مع الملخص الأسبوعي.</p></div>
+          </div>
+        </article>
+        <article class="glass card">
+          <div class="section-head"><span>قابلية التوسع</span><h3>لماذا هذا المشروع قابل للنمو؟</h3></div>
+          <p>البنية الصفية جاهزة، والمحتوى قابل للتكرار، ويمكن إضافة تقارير وتخصيص وحسابات مستخدمين لاحقًا دون تغيير الفكرة الأساسية. بهذه الصياغة يظهر المشروع كمنتج قابل للتوسع لا مجرد عرض محتوى.</p>
+          <div class="chip-row">
+            <span class="chip">هيكل صفي جاهز</span>
+            <span class="chip">لوحات متابعة</span>
+            <span class="chip">قياس أثر</span>
+            <span class="chip">تتبع تقدم</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section-cta">
+      <div class="container">
+        <div class="glass cta-banner">
+          <div>
+            <span class="pill">دعوة واضحة للتجربة</span>
+            <h3>شاهد كيف يتعلم الطفل من النشاط إلى اللعبة</h3>
+            <p>ابدأ الآن من الصف الثالث، أو تصفح المسار كاملًا من التأسيس إلى الابتكار.</p>
+          </div>
+          <div class="hero-actions">
+            <a class="btn primary large" href="grade-3.html">ابدأ رحلة الصف الثالث</a>
+            <a class="btn secondary large" href="programming.html">استكشف قسم البرمجة</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="pdf-modal" id="pdfLibraryModal">
+    <div class="pdf-panel glass card">
+      <div class="pdf-panel-top">
+        <div>
+          <h3>مكتبة PDF</h3>
+          <p id="pdfLibraryStatus">أضف ملفاتك داخل مجلد <code>public/pdfs</code> وستظهر هنا.</p>
+        </div>
+        <button class="viewer-close" data-close-pdf type="button" aria-label="إغلاق">×</button>
+      </div>
+      <div class="pdf-library-list" id="pdfLibraryList"></div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">براعم رقمية — تجربة تعليمية تفاعلية عربية مطورة لتبدو كمنتج تربوي قابل للعرض والتوسع.</div>
+  </footer>
+
+  <script src="js/content.js"></script>
+  <script src="js/progress-store.js"></script>
+  <script src="js/dashboard.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/viewer.js"></script>
+  <script src="js/pdf-library.js"></script>
+</body>
+</html>
