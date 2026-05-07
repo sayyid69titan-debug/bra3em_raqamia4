@@ -16,7 +16,7 @@ async function loadPdfLibrary() {
   STATIC_PDFS.forEach(([displayName, fileName]) => {
     const a = document.createElement('a');
     a.className = 'pdf-link';
-    a.href = `/pdfs/${encodeURIComponent(fileName)}`;
+   a.href = `/pdfs/${fileName}`;
     a.target = '_blank';
     a.rel = 'noopener';
     a.textContent = displayName;
