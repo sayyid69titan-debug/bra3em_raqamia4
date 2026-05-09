@@ -120,6 +120,88 @@ input,select{width:100%;padding:12px 14px;border-radius:14px;border:1px solid va
 }
 
 .dashboard-actions{display:flex;justify-content:center;margin-top:18px}
+.hero-progress-actions,.mission-actions,.pdf-row-actions,.grade-next-row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.hero-progress-actions{margin-top:14px}
+.quick-start-bar{
+  display:grid;
+  grid-template-columns:auto minmax(180px, 260px) auto;
+  gap:10px;
+  align-items:center;
+  width:max-content;
+  max-width:100%;
+  margin-top:18px;
+  padding:12px;
+  border-radius:22px;
+  background:rgba(255,255,255,.76);
+  border:1px solid var(--line);
+}
+.quick-start-bar label{font-weight:800;color:#24516b}
+.mission-board{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:20px;
+  padding:26px;
+  background:linear-gradient(135deg,rgba(255,241,168,.92),rgba(216,255,240,.9)) !important;
+}
+.mission-board h3{font-size:clamp(1.6rem,3vw,2.3rem);margin:14px 0 10px}
+.mission-board p{margin:0;color:var(--muted);line-height:1.9}
+.pdf-tools{
+  display:grid;
+  grid-template-columns:1fr 220px;
+  gap:12px;
+  margin-top:18px;
+}
+.pdf-link{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:14px;
+  padding:14px 16px;
+  border-radius:18px;
+  background:rgba(255,255,255,.78);
+  border:1px solid var(--line);
+}
+.pdf-link strong{display:block}
+.pdf-link small{display:block;color:var(--muted);margin-top:6px}
+.pdf-preview{
+  display:block;
+  width:100%;
+  height:420px;
+  margin-top:16px;
+  border:1px solid var(--line);
+  border-radius:20px;
+  background:#fff;
+}
+.grade-next-row{
+  justify-content:space-between;
+  padding:14px 16px;
+  border-radius:18px;
+  background:rgba(255,255,255,.72);
+  border:1px solid var(--line);
+}
+.badge-shelf{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:10px;
+}
+.badge{
+  display:grid;
+  place-items:center;
+  min-height:54px;
+  padding:10px;
+  border-radius:18px;
+  border:1px dashed rgba(82,96,115,.22);
+  color:#64748b;
+  background:rgba(255,255,255,.62);
+  font-weight:800;
+}
+.badge.earned{
+  color:#18323b;
+  background:linear-gradient(135deg,#fff1a8,#7cffa7);
+  border-style:solid;
+  box-shadow:0 12px 24px rgba(124,255,167,.18);
+}
 .activity-list.compact li{display:flex;justify-content:space-between;align-items:flex-start;gap:14px}
 .activity-list.compact li > div{display:grid;gap:8px}
 .interactive-actions{display:flex;justify-content:flex-end;margin-top:14px}
@@ -131,6 +213,21 @@ input,select{width:100%;padding:12px 14px;border-radius:14px;border:1px solid va
 .progress-bar.large{height:18px}
 .mark-complete[disabled]{opacity:.8;cursor:not-allowed}
 @media (max-width: 900px){.explanation-poster-grid{grid-template-columns:1fr}}
+@media (max-width: 760px){
+  .quick-start-bar,.pdf-tools{grid-template-columns:1fr;width:100%}
+  .mission-board{flex-direction:column;align-items:stretch}
+  .badge-shelf{grid-template-columns:repeat(2,1fr)}
+  .pdf-link{align-items:stretch;flex-direction:column}
+}
+
+@media print{
+  .topbar,.hero-actions,.nav,.pdf-modal,.viewer-modal,.footer,.zoom-btn,.mark-complete,#resetProgressBtn,#soundToggle{display:none !important}
+  body{background:#fff !important;color:#111}
+  body::before{display:none}
+  .section,.hero{padding:12px 0}
+  .glass,.card,.hero-shell,.mission-board{box-shadow:none !important;background:#fff !important;border:1px solid #d8dee8 !important}
+  .dashboard-grid,.journey-cards,.badge-shelf{break-inside:avoid}
+}
 
 
 /* Senior UI refresh: child-friendly colors, replace unit summaries with asset images */
