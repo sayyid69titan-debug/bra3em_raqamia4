@@ -37,14 +37,19 @@
           </div>
           <div class="hero-badge-row">
             <span class="pill">واجهة مطورة</span>
-          <!--  <span class="pill soft">جاهزة للعرض أمام اللجنة</span> -->
+           <!-- <span class="pill soft">جاهزة للعرض أمام اللجنة</span> -->
           </div>
           <h2>حوّل دراستك إلى <span>مغامرة رقمية!</span></h2>
           <p class="hero-lead">براعم رقمية منصة عربية تفاعلية تحول أنشطة المنهج إلى تجارب تعلم ممتعة للأطفال من الصف الأول إلى السادس، وتمنح المعلم أنشطة جاهزة، وتوفر لولي الأمر صورة أوضح عن تقدم الطفل.</p>
           <p class="hero-sublead">بدل عرض المحتوى كنصوص طويلة، صارت الرحلة أوضح: يختار الطفل الصف، يفهم المفهوم بصريًا، يطبق عبر نشاط أو لعبة، ثم يرى نتيجة وتقدمًا قابلًا للمتابعة.</p>
           <div class="hero-actions">
-            <a class="btn primary large" href="grade-3.html">جرّب رحلة الصف الثالث</a>
+            <a class="btn primary large" href="#gradeTracks">ابدأ الرحلة</a>
             <a class="btn secondary large" href="#gradeTracks">استعرض جميع الصفوف</a>
+          </div>
+          <div class="quick-start-bar" aria-label="اختيار سريع للصف">
+            <label for="quickGradeSelect">اختر الصف</label>
+            <select id="quickGradeSelect"></select>
+            <button class="btn primary" id="quickStartBtn" type="button">ابدأ الآن</button>
           </div>
         </div>
 
@@ -64,6 +69,10 @@
             </div>
             <div class="progress-bar"><span data-progress-bar style="width:0%"></span></div>
             <small data-progress-text>جاري تحميل التقدم الفعلي من قاعدة البيانات...</small>
+            <div class="hero-progress-actions">
+              <a class="btn secondary small" href="#dashboards">عرض التقرير</a>
+              <button class="btn small" id="soundToggle" type="button" aria-pressed="false">الصوت يعمل</button>
+            </div>
           </div>
           <div class="hero-mascot">
             <img src="assets/Gemini_Generated_Image_5pa5hy5pa5hy5pa5.png" alt="براعم رقمية">
@@ -132,6 +141,22 @@
       </div>
     </section>
 
+    <section class="section" id="dailyMission">
+      <div class="container">
+        <div class="mission-board glass">
+          <div>
+            <span class="pill">مهمة اليوم</span>
+            <h3 id="missionTitle">نشاط قصير جاهز للبدء</h3>
+            <p id="missionText">اختر صفك، أنجز نشاطًا واحدًا، ثم شاهد التقدم يظهر في لوحة المتابعة.</p>
+          </div>
+          <div class="mission-actions">
+            <a class="btn primary large" id="missionLink" href="grade-1.html">ابدأ المهمة</a>
+            <button class="btn secondary large" id="printReportBtn" type="button">طباعة تقرير ولي الأمر</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="section" id="difference">
       <div class="container">
         <div class="section-head centered">
@@ -162,7 +187,10 @@
             <ul class="dashboard-list" id="parentDashboardList"></ul>
           </article>
         </div>
-        <div class="dashboard-actions"><button class="btn secondary" id="resetProgressBtn" type="button">إعادة تعيين التقدم</button></div>
+        <div class="dashboard-actions">
+          <button class="btn primary" id="printDashboardBtn" type="button">طباعة الملخص</button>
+          <button class="btn secondary" id="resetProgressBtn" type="button">إعادة تعيين التقدم</button>
+        </div>
       </div>
     </section>
 
@@ -216,7 +244,20 @@
         </div>
         <button class="viewer-close" data-close-pdf type="button" aria-label="إغلاق">×</button>
       </div>
+      <div class="pdf-tools">
+        <input id="pdfSearch" type="search" placeholder="ابحث باسم الملف أو الصف">
+        <select id="pdfGradeFilter">
+          <option value="">كل الصفوف</option>
+          <option value="الأول">الصف الأول</option>
+          <option value="الثاني">الصف الثاني</option>
+          <option value="الثالث">الصف الثالث</option>
+          <option value="الرابع">الصف الرابع</option>
+          <option value="الخامس">الصف الخامس</option>
+          <option value="السادس">الصف السادس</option>
+        </select>
+      </div>
       <div class="pdf-library-list" id="pdfLibraryList"></div>
+      <iframe class="pdf-preview" id="pdfPreview" title="معاينة PDF"></iframe>
     </div>
   </div>
 
