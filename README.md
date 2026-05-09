@@ -1,13 +1,27 @@
-# براعم رقمية — نسخة جاهزة لـ Vercel
+# براعم رقمية
 
-هذه النسخة حُوّلت إلى موقع Static يعمل على Vercel بدون Express أو SQLite.
-
-## التشغيل المحلي
-npm run dev
+npm install
+npm start
 
 ## الرفع على Vercel
-ارفع المجلد كما هو. Vercel سيستخدم:
-- Build Command: `npm run build`
-- Output Directory: `public`
 
-تم تحويل حفظ التقدم إلى LocalStorage داخل المتصفح حتى يعمل على الاستضافة المجانية بدون قاعدة بيانات.
+المشروع جاهز للرفع على Vercel كتطبيق Express مع ملفات ثابتة داخل `public`.
+
+### الطريقة الأسهل
+
+1. ارفع مجلد المشروع إلى GitHub.
+2. افتح Vercel واختر `Add New Project`.
+3. اختر مستودع المشروع.
+4. اترك الإعدادات الافتراضية كما هي.
+5. اضغط `Deploy`.
+
+### أو من Vercel CLI
+
+```bash
+npm install
+npm i -g vercel
+vercel
+vercel --prod
+```
+
+ملاحظة: حفظ التقدم على Vercel يستخدم مساحة مؤقتة في الخادم مع حفظ احتياطي داخل متصفح المستخدم. إذا احتاج صاحب المشروع حفظًا دائمًا لكل الطلاب لاحقًا، اربط المشروع بقاعدة بيانات مثل Vercel Postgres أو Supabase.
