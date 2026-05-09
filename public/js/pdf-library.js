@@ -50,12 +50,12 @@ async function loadPdfLibrary() {
       status.textContent = 'لا توجد ملفات PDF بعد. أضف ملفاتك داخل public/pdfs وستظهر هنا تلقائيًا.';
       return;
     }
-   filterPdfLibrary();
-    catch (e) {
+    filterPdfLibrary();
+  } catch (e) {
     status.textContent = 'تعذر تحميل مكتبة PDF. تأكد من تشغيل المشروع عبر Node.js.';
   }
-  } 
 }
+
 
 (function initPdfLibrary() {
   const trigger = document.getElementById('pdfLibraryToggle');
