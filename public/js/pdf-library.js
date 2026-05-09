@@ -50,7 +50,7 @@ async function loadPdfLibrary() {
       status.textContent = 'لا توجد ملفات PDF بعد. أضف ملفاتك داخل public/pdfs وستظهر هنا تلقائيًا.';
       return;
     }
-   
+   filterPdfLibrary();
   } 
 }
 
