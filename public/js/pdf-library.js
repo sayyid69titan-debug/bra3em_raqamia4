@@ -36,24 +36,42 @@ function filterPdfLibrary() {
   renderPdfLibrary(filtered);
 }
 
-async function loadPdfLibrary() {
+function loadPdfLibrary() {
   const list = document.getElementById('pdfLibraryList');
   const status = document.getElementById('pdfLibraryStatus');
   if (!list || !status) return;
+
   list.innerHTML = '';
   status.textContent = 'جارٍ تحميل ملفات PDF...';
-  try {
-    const res = await fetch('/api/pdfs');
-    if (!res.ok) throw new Error('network');
-    pdfFilesCache = await res.json();
-    if (!pdfFilesCache.length) {
-      status.textContent = 'لا توجد ملفات PDF بعد. أضف ملفاتك داخل public/pdfs وستظهر هنا تلقائيًا.';
-      return;
+
+  pdfFilesCache = [
+    {
+      name: 'الصف الأول.pdf',
+      url: '/pdfs/الصف_الأول.pdf'
+    },
+    {
+      name: 'الصف الثاني.pdf',
+      url: '/pdfs/الصف_الثاني.pdf'
+    },
+    {
+      name: 'الصف الثالث.pdf',
+      url: '/pdfs/الصف_الثالث.pdf'
+    },
+    {
+      name: 'الصف الرابع.pdf',
+      url: '/pdfs/الصف_الرابع.pdf'
+    },
+    {
+      name: 'الصف الخامس.pdf',
+      url: '/pdfs/الصف_الخامس.pdf'
+    },
+    {
+      name: 'الصف السادس.pdf',
+      url: '/pdfs/الصف_السادس.pdf'
     }
-    filterPdfLibrary();
-  } catch (e) {
-    status.textContent = 'تعذر تحميل مكتبة PDF. تأكد من تشغيل المشروع عبر Node.js.';
-  }
+  ];
+
+  filterPdfLibrary();
 }
 
 
