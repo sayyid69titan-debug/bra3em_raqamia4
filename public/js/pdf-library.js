@@ -45,30 +45,12 @@ function loadPdfLibrary() {
   status.textContent = 'جارٍ تحميل ملفات PDF...';
 
   pdfFilesCache = [
-    {
-      name: 'الصف الأول.pdf',
-      url: '/pdfs/الصف_الأول.pdf'
-    },
-    {
-      name: 'الصف الثاني.pdf',
-      url: '/pdfs/الصف_الثاني.pdf'
-    },
-    {
-      name: 'الصف الثالث.pdf',
-      url: '/pdfs/الصف_الثالث.pdf'
-    },
-    {
-      name: 'الصف الرابع.pdf',
-      url: '/pdfs/الصف_الرابع.pdf'
-    },
-    {
-      name: 'الصف الخامس.pdf',
-      url: '/pdfs/الصف_الخامس.pdf'
-    },
-    {
-      name: 'الصف السادس.pdf',
-      url: '/pdfs/الصف_السادس.pdf'
-    }
+    { name: 'الصف الأول.pdf', url: './pdfs/grade-1.pdf' },
+    { name: 'الصف الثاني.pdf', url: './pdfs/grade-2.pdf' },
+    { name: 'الصف الثالث.pdf', url: './pdfs/grade-3.pdf' },
+    { name: 'الصف الرابع.pdf', url: './pdfs/grade-4.pdf' },
+    { name: 'الصف الخامس.pdf', url: './pdfs/grade-5.pdf' },
+    { name: 'الصف السادس.pdf', url: './pdfs/grade-6.pdf' }
   ];
 
   filterPdfLibrary();
