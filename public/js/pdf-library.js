@@ -52,7 +52,7 @@ async function loadPdfLibrary() {
     }
     filterPdfLibrary();
   } catch (e) {
-    status.textContent = 'تعذر تحميل مكتبة PDF. تأكد من تشغيل المشروع عبر Node.js.';
+    status.textContent = 'تعذر تحميل مكتبة PDF. ';
   }
 }
 
