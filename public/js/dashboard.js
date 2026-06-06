@@ -38,7 +38,7 @@
       latestTitle: latest?.title || 'ابدأ أول نشاط',
       latestGradeTitle: latestGrade?.title || activeGrade.title,
       nextTitle: nextGrade ? `انتقل إلى ${nextGrade.title}` : 'أكمل ألعاب الصف الحالي',
-      activeStudents: Math.max(1, Math.min(24, 12 + doneGames + doneActivities)),
+      activeStudents: Math.max(1, Math.min(24, 0 + doneGames + doneActivities)),
       classActivities: doneItems,
       challengePoint: activeGrade?.hero || 'الأنماط والتعليمات',
       homeSuggestion: activeGrade?.activities?.[0]?.[0] || 'نشاط منزلي قصير',
